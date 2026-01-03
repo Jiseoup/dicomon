@@ -6,7 +6,6 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 class Base(DeclarativeBase):
     """Base model for all database models."""
-    pass
 
 
 class TimestampMixin:

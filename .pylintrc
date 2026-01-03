@@ -10,7 +10,8 @@ disable=
     R0903,  # too-few-public-methods (for SQLAlchemy models)
     W0511,  # fixme (allow TODO comments)
     C0103,  # invalid-name (for short variable names in comprehensions)
-    R0801   # duplicate-code (can be noisy in similar patterns)
+    R0801,  # duplicate-code (can be noisy in similar patterns)
+    E1136   # unsubscriptable-object (false positive with SQLAlchemy Mapped)
 
 [FORMAT]
 max-line-length=79
