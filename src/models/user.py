@@ -1,4 +1,5 @@
 from typing import List
+
 from sqlalchemy import BigInteger, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 

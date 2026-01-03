@@ -1,4 +1,5 @@
 import enum
+
 from sqlalchemy import Enum as SQLEnum
 from sqlalchemy import ForeignKey, BigInteger, SmallInteger
 from sqlalchemy.orm import Mapped, mapped_column, relationship
