@@ -1,0 +1,25 @@
+[MASTER]
+ignore=migrations
+ignore-patterns=test_.*\.py
+
+[MESSAGES CONTROL]
+disable=
+    C0114,  # missing-module-docstring
+    C0115,  # missing-class-docstring
+    C0116,  # missing-function-docstring
+    R0903,  # too-few-public-methods (for SQLAlchemy models)
+    W0511,  # fixme (allow TODO comments)
+    C0103,  # invalid-name (for short variable names in comprehensions)
+    R0801   # duplicate-code (can be noisy in similar patterns)
+
+[FORMAT]
+max-line-length=79
+indent-string='    '
+
+[BASIC]
+good-names=i,j,k,v,ex,_,id,db,pk,fk
+
+[DESIGN]
+max-attributes=12
+max-args=7
+min-public-methods=1

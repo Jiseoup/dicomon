@@ -149,9 +149,6 @@ logs/
 bot_token.txt
 discord_token.txt
 
-# Alembic
-# versions/ 폴더는 커밋해야 하므로 제외하지 않음
-
 # Redis dump
 dump.rdb
 
