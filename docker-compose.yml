@@ -45,6 +45,8 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+    env_file:
+      - .env
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
       - DISCORD_GUILD_ID=${DISCORD_GUILD_ID}
@@ -55,9 +57,6 @@ services:
       - LOG_LEVEL=${LOG_LEVEL}
     volumes:
       - ./logs:/app/logs
-      - ./.env:/app/.env
-    env_file:
-      - .env
 
 volumes:
   postgres_data:
