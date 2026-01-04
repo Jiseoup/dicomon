@@ -28,5 +28,12 @@ COPY . .
 # Create logs directory.
 RUN mkdir -p logs
 
+# Copy and set entrypoint script.
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Set entrypoint.
+ENTRYPOINT ["/entrypoint.sh"]
+
 # Run the bot.
 CMD ["python", "main.py"]
