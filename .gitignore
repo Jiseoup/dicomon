@@ -142,9 +142,6 @@ dmypy.json
 logs/
 *.log
 
-# Docker
-.dockerignore
-
 # Discord Bot specific
 bot_token.txt
 discord_token.txt
